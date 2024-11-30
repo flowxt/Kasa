@@ -1,0 +1,12 @@
+.footer{
+    background : black;
+    color: white;
+    @include verticalCenter;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    img{
+        margin-bottom: 20px;
+    }
+}

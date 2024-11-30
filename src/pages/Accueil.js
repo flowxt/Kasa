@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation";
 import Logo from "../components/Logo";
 import Background from "../components/Background";
 import Cards from "../components/Cards"; // Importez le composant Cards
+import Footer from "../components/Footer";
 
 const Accueil = () => {
   return (
@@ -16,6 +17,9 @@ const Accueil = () => {
       </div>
       <div>
         <Cards />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );
