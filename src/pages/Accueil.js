@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Logo from "../components/Logo";
 import Background from "../components/Background";
+import Cards from "../components/Cards"; // Importez le composant Cards
 
 const Accueil = () => {
   return (
@@ -12,6 +13,9 @@ const Accueil = () => {
       </div>
       <div className="background">
         <Background />
+      </div>
+      <div>
+        <Cards />
       </div>
     </>
   );

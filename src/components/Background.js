@@ -5,6 +5,8 @@ const Background = () => {
   return (
     <div className="bg">
       <img src={accueilImage} alt="accueil-fond" />
+
+      <h2>Chez vous, partout et ailleurs</h2>
     </div>
   );
 };
