@@ -1,0 +1,86 @@
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .btn {
+      width: 80%;
+      background: $color-1;
+      color: $color-3;
+      border: none;
+      border-radius: 10px;
+      height: 52px;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      padding-left: 20px;
+      cursor: pointer;
+      padding-right: 20px;
+      
+      margin-top: 30px; 
+    }
+    .slide:nth-child(4) .btn {
+        margin-bottom: 20px;
+      }
+  
+    .content {
+      overflow: hidden;
+      max-height: 0;
+      width: 80%;
+      transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
+      opacity: 0;
+      margin-bottom: 0; // Ajoutez un margin-bottom initial de 0
+    }
+  
+    .content-active {
+      max-height: 200px; // Ajustez selon la hauteur max du texte
+      opacity: 1;
+      
+    }
+  
+    p {
+      margin-bottom: 0; // Supprimez le margin-bottom du paragraphe
+      font-size: 1.2rem;
+      background: $color-2;
+      padding: 20px;
+      border-radius: 0 0 10px 10px;
+    }
+  
+    .icon {
+      transition: transform 0.3s ease;
+    }
+  
+    .rotate-down {
+      animation: rotateDown 0.3s forwards;
+    }
+  
+    .rotate-up {
+      animation: rotateUp 0.3s forwards;
+    }
+  
+    @keyframes rotateDown {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(90deg);
+      }
+      100% {
+        transform: rotate(180deg);
+      }
+    }
+  
+    @keyframes rotateUp {
+      0% {
+        transform: rotate(180deg);
+      }
+      50% {
+        transform: rotate(90deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  }
