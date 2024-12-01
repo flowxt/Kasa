@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import About from "./pages/About";
+import House from "./pages/House";
 import Error from "./pages/Error";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/about" element={<About />} />
+        {/* <Route path="/house/:id" element={<House />} /> */}
         {/*  Ici je peut créer ma route erreur 404 L'etoile * signifie tout les
         chemins qui ne sont pas définis */}
         <Route path="*" element={<Error />} />
