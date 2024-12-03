@@ -11,9 +11,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/house/:id" element={<House />} /> */}
-        {/*  Ici je peut créer ma route erreur 404 L'etoile * signifie tout les
-        chemins qui ne sont pas définis */}
+        <Route path="/house/:id" element={<House />} />{" "}
+        {/* Route avec paramètre ID */}
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
