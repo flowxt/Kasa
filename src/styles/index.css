@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -26,6 +27,12 @@ li {
   width: 212px;
   height: 68px;
 }
+@media (max-width: 540px) {
+  .logo img {
+    width: 145px;
+    height: 46px;
+  }
+}
 
 .navigation ul {
   display: flex;
@@ -36,6 +43,11 @@ li {
   text-decoration: none;
   padding: 10px;
   font-size: 1.4rem;
+}
+@media (max-width: 640px) {
+  .navigation ul a {
+    font-size: 1rem;
+  }
 }
 .navigation ul a li {
   color: black;
@@ -94,6 +106,11 @@ li {
   align-items: center;
   border-radius: 20px;
 }
+@media (max-width: 540px) {
+  .bg h2 {
+    font-size: 1.3rem;
+  }
+}
 
 .cards-container {
   display: flex;
@@ -137,7 +154,7 @@ li {
 
 .card-title h2 {
   margin: 0;
-  width: 100%;
+  width: 50%;
   font-size: 0.8rem;
 }
 
@@ -155,10 +172,20 @@ li {
   margin-bottom: 40px;
   margin-top: 20px;
 }
+@media (max-width: 540px) {
+  .contentError h2 {
+    font-size: 5rem;
+  }
+}
 .contentError p {
   font-size: 1.6rem;
   margin-bottom: 70px;
   color: #FF6060;
+}
+@media (max-width: 540px) {
+  .contentError p {
+    font-size: 1.2rem;
+  }
 }
 .contentError a {
   font-size: 1rem;
@@ -188,6 +215,11 @@ li {
   padding-right: 20px;
   margin-top: 30px;
 }
+@media (max-width: 540px) {
+  .slide .btn {
+    font-size: 1.2rem;
+  }
+}
 .slide .slide:nth-child(4) .btn {
   margin-bottom: 20px;
 }
@@ -209,6 +241,11 @@ li {
   background: #f1f0f0;
   padding: 20px;
   border-radius: 0 0 10px 10px;
+}
+@media (max-width: 540px) {
+  .slide p {
+    font-size: 1rem;
+  }
 }
 .slide .icon {
   transition: transform 0.3s ease;
@@ -255,4 +292,24 @@ li {
 }
 .footer img {
   margin-bottom: 20px;
+}
+.footer p {
+  text-align: center;
+}
+@media (max-width: 540px) {
+  .footer p {
+    display: inline-block;
+  }
+  .footer p::before {
+    content: "© 2020 Kasa.";
+  }
+  .footer p::after {
+    content: " All rights reserved";
+    display: block;
+  }
+}
+@media (min-width: 541px) {
+  .footer p::before {
+    content: "© 2020 Kasa. All rights reserved";
+  }
 }/*# sourceMappingURL=index.css.map */

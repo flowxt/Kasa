@@ -8,6 +8,10 @@
         text-decoration: none;
         padding: 10px;
         font-size: 1.4rem;
+        
+        @media (max-width: 640px) {
+          font-size: 1rem;
+        }
   
         li {
           color: $color-4;

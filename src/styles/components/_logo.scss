@@ -4,6 +4,10 @@
     img{
         width: 212px;
         height: 68px;
+    
+   @media (max-width: 540px) {
+        width: 145px;
+        height: 46px;
     }
-   
+}
 }

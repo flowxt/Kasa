@@ -10,4 +10,28 @@
     img{
         margin-bottom: 20px;
     }
-}
+    p {
+        text-align: center;
+      }
+    
+      @media (max-width: 540px) {
+        p {
+          display: inline-block;
+        }
+    
+        p::before {
+          content: "© 2020 Kasa.";
+        }
+    
+        p::after {
+          content: " All rights reserved";
+          display: block;
+        }
+      }
+    
+      @media (min-width: 541px) {
+        p::before {
+          content: "© 2020 Kasa. All rights reserved";
+        }
+      }
+    }
