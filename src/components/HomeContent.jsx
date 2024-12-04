@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import cardData from "../data/data.json";
@@ -10,7 +10,7 @@ const HomeContent = () => {
   const house = cardData.find((item) => item.id === id); // Trouve la maison correspondante
 
   if (!house) {
-    return <div>Maison non trouvée</div>;
+    return <Navigate to="/404" />;
   }
 
   const renderStars = (rating) => {

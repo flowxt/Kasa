@@ -13,6 +13,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/house/:id" element={<House />} />{" "}
         {/* Route avec paramètre ID */}
+        <Route path="/404" element={<Error />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
