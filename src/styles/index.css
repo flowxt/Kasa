@@ -79,7 +79,7 @@ li {
 }
 
 .bg {
-  margin: 20px 50px 20px 50px;
+  margin: 20px 50px 50px 50px;
   position: relative;
 }
 .bg img {
@@ -488,54 +488,14 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  margin: 0 30px;
 }
 .button-house .buttons {
   display: flex;
-  gap: 50px;
   width: 100%;
   justify-content: space-between;
 }
 .button-house .buttons .button-container {
   width: 50%;
-}
-.button-house .buttons .button-container .btn {
-  width: 100%;
-  background: #FF6060;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  height: 52px;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
-  padding-left: 20px;
-  cursor: pointer;
-  padding-right: 20px;
-  transition: background-color 0.3s, transform 0.3s ease;
-}
-.button-house .buttons .button-container .btn:focus {
-  outline: none;
-}
-.button-house .buttons .button-container .btn .icon {
-  transition: transform 0.3s ease;
-}
-.button-house .buttons .button-container .btn .rotate-down {
-  transform: rotate(0deg);
-}
-.button-house .buttons .button-container .btn .rotate-up {
-  transform: rotate(180deg);
-}
-.button-house .buttons .button-container .content-active {
-  overflow: hidden;
-  max-height: 200px;
-  transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
-  opacity: 1;
-  margin-bottom: 20px;
-  text-align: left;
 }
 .button-house .buttons .button-container p {
   font-size: 1rem;
@@ -564,6 +524,71 @@ li {
     width: 100%;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.toggle-button {
+  margin: 0px 50px 0 50px;
+}
+.toggle-button .btn {
+  width: 100%;
+  background: #FF6060;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 52px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding-left: 20px;
+  cursor: pointer;
+  padding-right: 20px;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+.toggle-button .btn:focus {
+  outline: none;
+}
+.toggle-button .btn .icon {
+  transition: transform 0.3s ease;
+}
+.toggle-button .btn .rotate-down {
+  transform: rotate(0deg);
+}
+.toggle-button .btn .rotate-up {
+  transform: rotate(180deg);
+}
+.toggle-button .content-active {
+  overflow: hidden;
+  max-height: 200px;
+  transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
+  opacity: 1;
+  padding: 5px 20px;
+  text-align: left;
+  background: #f1f0f0;
+  border-radius: 0 0 10px 10px;
+}
+
 .footer {
   background: black;
   color: white;

@@ -1,18 +1,7 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import ToggleButton from "./ToggleButton";
 
 const Content = () => {
-  const [activeSlides, setActiveSlides] = useState([]);
-
-  const toggleSlide = (index) => {
-    setActiveSlides((prevActiveSlides) =>
-      prevActiveSlides.includes(index)
-        ? prevActiveSlides.filter((i) => i !== index)
-        : [...prevActiveSlides, index]
-    );
-  };
-
   const slides = [
     {
       title: "Fiabilité",
@@ -39,24 +28,7 @@ const Content = () => {
   return (
     <>
       {slides.map((slide, index) => (
-        <div className="slide" key={index}>
-          <button className="btn" onClick={() => toggleSlide(index)}>
-            {slide.title}
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              className={`icon ${
-                activeSlides.includes(index) ? "rotate-up" : "rotate-down"
-              }`}
-            />
-          </button>
-          <div
-            className={`content ${
-              activeSlides.includes(index) ? "content-active" : ""
-            }`}
-          >
-            <p>{slide.content}</p>
-          </div>
-        </div>
+        <ToggleButton key={index} title={slide.title} content={<p>{slide.content}</p>} />
       ))}
     </>
   );

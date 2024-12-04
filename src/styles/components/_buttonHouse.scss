@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  margin: 0 30px;
+  // padding: 20px;
+  // margin: 0 30px;
 
   .buttons {
     display: flex;
-    gap: 50px;
+    // gap: 40px;
     width: 100%;
     justify-content: space-between;
 
@@ -17,51 +17,51 @@
       width: 50%; // Ajustez la largeur pour qu'ils prennent chacun 50% avec un gap
     
 
-      .btn {
-        width: 100%;
-        background: $color-1;
-        color: $color-3;
-        border: none;
-        border-radius: 10px;
-        height: 52px;
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        padding-left: 20px;
-        cursor: pointer;
-        padding-right: 20px;
-        transition: background-color 0.3s, transform 0.3s ease;
+      // .btn {
+      //   width: 100%;
+      //   background: $color-1;
+      //   color: $color-3;
+      //   border: none;
+      //   border-radius: 10px;
+      //   height: 52px;
+      //   font-size: 1.5rem;
+      //   display: flex;
+      //   justify-content: space-between;
+      //   align-items: center;
+      //   text-align: left;
+      //   padding-left: 20px;
+      //   cursor: pointer;
+      //   padding-right: 20px;
+      //   transition: background-color 0.3s, transform 0.3s ease;
        
 
-        &:focus {
-          outline: none; // Supprime le contour par défaut lors du clic
-        }
+      //   &:focus {
+      //     outline: none; // Supprime le contour par défaut lors du clic
+      //   }
 
     
 
-        .icon {
-          transition: transform 0.3s ease;
-        }
+      //   .icon {
+      //     transition: transform 0.3s ease;
+      //   }
 
-        .rotate-down {
-          transform: rotate(0deg);
-        }
+      //   .rotate-down {
+      //     transform: rotate(0deg);
+      //   }
 
-        .rotate-up {
-          transform: rotate(180deg);
-        }
-      }
+      //   .rotate-up {
+      //     transform: rotate(180deg);
+      //   }
+      // }
 
-      .content-active {
-        overflow: hidden;
-        max-height: 200px; // Ajustez selon la hauteur max du texte
-        transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
-        opacity: 1;
-        margin-bottom: 20px;
-        text-align: left;
-      }
+      // .content-active {
+      //   overflow: hidden;
+      //   max-height: 200px; // Ajustez selon la hauteur max du texte
+      //   transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
+      //   opacity: 1;
+      //   margin-bottom: 20px;
+      //   text-align: left;
+      // }
 
       p {
         font-size: 1rem;

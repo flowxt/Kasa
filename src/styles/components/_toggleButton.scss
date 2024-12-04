@@ -1,0 +1,56 @@
+@import '../settings'; // Assurez-vous d'importer les variables de couleur
+
+.toggle-button {
+  margin: 0px 50px 0 50px;
+
+
+  .btn {
+    width: 100%;
+    background: $color-1;
+    color: $color-3;
+    border: none;
+    border-radius: 10px;
+    height: 52px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    padding-right: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s ease;
+
+    &:focus {
+      outline: none; // Supprime le contour par défaut lors du clic
+    }
+
+
+
+    .icon {
+      transition: transform 0.3s ease;
+    }
+
+    .rotate-down {
+      transform: rotate(0deg);
+    }
+
+    .rotate-up {
+      transform: rotate(180deg);
+    }
+  }
+
+  .content-active {
+    overflow: hidden;
+    max-height: 200px; // Ajustez selon la hauteur max du texte
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
+    opacity: 1;
+    padding: 5px 20px;
+   
+    text-align: left;
+    background: $color-2;
+
+    border-radius: 0 0 10px 10px;
+  }
+}
