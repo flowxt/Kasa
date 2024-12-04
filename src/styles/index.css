@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
 }
 
 body {
@@ -328,6 +329,7 @@ li {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
 }
 
 body {
@@ -353,11 +355,12 @@ li {
 .home-content h2 {
   color: #FF6060;
   font-size: 1.8rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 200;
 }
 .home-content p {
-  font-weight: 700;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 .home-content .tags {
   margin-top: 10px;
@@ -467,6 +470,7 @@ li {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
 }
 
 body {
@@ -528,6 +532,7 @@ li {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
 }
 
 body {
