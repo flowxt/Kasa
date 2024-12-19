@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import cardData from "../data/data.json";
 
 const Carousel = () => {
@@ -7,9 +7,11 @@ const Carousel = () => {
   const house = cardData.find((item) => item.id === id); // Trouve la maison correspondante
   const [currentIndex, setCurrentIndex] = useState(0); // État pour suivre l'image actuelle
 
+  const navigate = useNavigate();
+
   if (!house) {
-    return <div>Maison non trouvée</div>;
-    // Essayer d'afficher plutot la page d'erreur
+    navigate("/erreur"); // Redirige vers la route d'erreur
+    return null; // Empêche le reste du composant de se rendre
   }
 
   const pictures = house.pictures;
