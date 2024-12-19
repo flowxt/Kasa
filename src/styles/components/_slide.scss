@@ -59,39 +59,33 @@
       }
     }
   
-    .icon {
-      transition: transform 0.3s ease;
-    }
+    // .icon {
+    //   transition: transform 0.3s ease;
+    // }
   
-    .rotate-down {
-      animation: rotateDown 0.3s forwards;
-    }
+    // .rotate-down {
+    //   animation: rotateDown 0.3s forwards;
+    // }
   
-    .rotate-up {
-      animation: rotateUp 0.3s forwards;
-    }
+    // .rotate-up {
+    //   animation: rotateUp 0.3s forwards;
+    // }
   
-    @keyframes rotateDown {
-      0% {
-        transform: rotate(0deg);
-      }
-      50% {
-        transform: rotate(90deg);
-      }
-      100% {
-        transform: rotate(180deg);
-      }
-    }
+    // @keyframes rotateDown {
+    //   0% {
+    //     transform: rotate(0deg);
+    //   }
+    //   100% {
+    //     transform: rotate(180deg);
+    //   }
+    // }
   
-    @keyframes rotateUp {
-      0% {
-        transform: rotate(180deg);
-      }
-      50% {
-        transform: rotate(90deg);
-      }
-      100% {
-        transform: rotate(0deg);
-      }
-    }
+    // @keyframes rotateUp {
+    //   0% {
+    //     transform: rotate(180deg);
+    //   }
+    //   100% {
+    //     transform: rotate(0deg);
+    //   }
+    // }
   }

@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import "../styles/components/_toggleButton.scss"; // Assurez-vous d'importer le fichier de styles
 
-
-// J'ai mis 2 props pour mon composant 
 const ToggleButton = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
 
@@ -25,4 +23,5 @@ const ToggleButton = ({ title, content }) => {
     </div>
   );
 };
+
 export default ToggleButton;
