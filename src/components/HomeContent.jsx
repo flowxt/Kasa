@@ -21,7 +21,7 @@ const HomeContent = () => {
           key={i}
           icon={faStar}
           className="star-icon"
-          style={{ color: i < rating ? "#FF6060" : "gray" }} // Utilisez les valeurs hexadécimales directement
+          style={{ color: i < rating ? "#FF6060" : "gray" }} // J'utilise les valeurs hexadécimales directement
         />
       );
     }
